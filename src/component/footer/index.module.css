@@ -1,11 +1,13 @@
-.footer  {
+.footer {
     display: flex;
-    flex-direction: column;
-    padding: 100px 250px;
+    flex-direction: row;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
+    gap: 50px;
+    padding: 100px 250px;
 }
-  
+
 .footerMain {
     display: flex;
     flex-direction: row;
@@ -26,7 +28,7 @@
 }
   
 .footerRight {
-    display: grid;
+    display: flex;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     gap: 50px;
     row-gap: 0px;
@@ -62,5 +64,6 @@
     width: 24px;
     font-size: 24px;
 }
+
 
 
