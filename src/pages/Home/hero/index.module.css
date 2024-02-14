@@ -1,0 +1,66 @@
+.heroSectionDiv {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  margin-top: 20px;
+  padding: 50px 260px;
+}
+
+.oneStop, .boldTexts {
+font-family: 'HelveticaforTarget-Bold', sans-serif;
+font-size: 30px;
+}
+
+.oneStop span {
+color: rgb(0, 90, 226);
+}
+
+.smallerTexts {
+margin: 0;
+margin-top: -15px;
+font-family: 'HelveticaforTarget', sans-serif;
+}
+
+.statsContainerOne {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: -20px;
+  font-size: -20px;
+  }
+
+.statsContainerTwo {
+display: flex;
+flex-wrap: wrap;
+justify-content: center;
+gap: 20px;
+font-size: 18px;
+}
+
+.statItem {
+text-align: center;
+}
+
+.firstDiv {
+display: flex;
+flex-direction: row;
+align-items: center;
+gap: 15px;
+}
+
+.firstDiv p {
+  font-family: 'HelveticaforTarget-Bold', sans-serif;
+  font-size: 35px;
+}
+
+.firstDiv p span {
+  color: rgb(0, 90, 226);
+}
+.statement {
+font-family: 'HelveticaforTarget', sans-serif;
+font-size: 15px;
+margin-top: -20px;
+text-align: center;
+color: black;
+margin-left: 12px;
+}

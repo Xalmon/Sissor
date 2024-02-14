@@ -6,22 +6,20 @@
     align-items: center;
 }
 
-
-
 .firstInnerDiv {
     display: flex;
     flex-direction: row;
     align-items: center;
     gap: 15px;
+}
 
-    > p {
-        font-family: 'HelveticaforTarget-Bold', sans-serif;
-        font-size: 35px;
+.firstInnerDiv p {
+    font-family: 'HelveticaforTarget-Bold', sans-serif;
+    font-size: 35px;
+}
 
-        > span {
-            color: rgb(0,90,226);
-        }
-    }
+.firstInnerDiv p span {
+    color: rgb(0, 90, 226);
 }
 
 .statement {
@@ -44,38 +42,42 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    border: 1px solid;
+    border: 1px solid rgb(135, 165, 209);
     padding: 13px 40px;
     border-radius: 10px;
     width: 210px;
     height: 450px;
-    border-color: rgb(135, 165, 209);
+    transition: all 0.3s;
 }
 
 .prices:hover {
-    display: flex;
-    flex-direction: column;
     background-color: rgb(30, 52, 72);
     color: white;
     width: 250px;
     height: 570px;
-    justify-content: center;
+}
+
+.categories,
+.amount {
+    font-family: 'HelveticaforTarget-Bold', sans-serif;
 }
 
 .categories {
-    font-family: 'HelveticaforTarget', sans-serif;
     font-size: 18px;
     margin-bottom: -3px;
 }
 
 .amount {
-    font-family: 'HelveticaforTarget-Bold', sans-serif;
     font-size: 30px;
 }
 
-.perks {
+.perks,
+.features p {
     font-family: 'HelveticaforTarget', sans-serif;
     font-size: 16px;
+}
+
+.perks {
     font-weight: bold;
     margin-top: -20px;
 }
@@ -85,15 +87,10 @@
     flex-direction: row;
     align-items: center;
     gap: 5px;
-
-    > p {
-        font-family: 'HelveticaforTarget', sans-serif;
-        font-size: 14px;
-    }
 }
 
 .checkMark {
-    color: rgb(0,90,226);
+    color: rgb(0, 90, 226);
 }
 
 .btns {
@@ -114,19 +111,24 @@
 .mainForm {
     background-color: white;
     border-radius: 10px;
-    padding: 40PX 50PX;
+    padding: 40px 50px;
     display: flex;
     flex-direction: column;
     align-items: center;
+    width: fit-content;
+}
+
+.firstInputField,
+.selectBox,
+.secondInputField {
+    height: 45px;
+    border-radius: 10px;
+    border: 1px solid rgb(0, 90, 226);
+    margin-top: 10px;
 }
 
 .firstInputField {
     width: 350px;
-    height: 45px;
-    border-radius: 10px;
-    border: 1px solid;
-    border-color: rgb(0,90,226);
-    margin-top: 10px;
 }
 
 .selectDiv {
@@ -134,29 +136,24 @@
     gap: 10px;
     margin-top: 20px;
     margin-bottom: 20px;
-    
 }
 
 .selectBox {
-    height: 50px;
     width: 170px;
-    border-radius: 10px;
-    border: 1px solid;
-    border-color: rgb(0,90,226);
-}
-
-.secondInputField {
-    height: 45px;
-    width: 169px;
-    border-radius: 10px;
-    border: 1px solid;
-    border-color: rgb(0,90,226);
 }
 
 .formText {
     font-family: 'HelveticaforTarget', sans-serif;
     font-size: 14px;
     margin-left: -30px;
-    color: rgb(0,90,226);
+    color: rgb(0, 90, 226);
     margin-top: 20px;
+}
+.statement {
+    font-family: 'HelveticaforTarget', sans-serif;
+    font-size: 15px;
+    margin-top: -20px;
+    text-align: center;
+    color: black;
+    margin-left: 12px;
 }

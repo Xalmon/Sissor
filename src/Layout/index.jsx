@@ -1,20 +1,14 @@
-import React from 'react';
-import NavBar from "../component/NavBar";
-// import Outlet from '../Outlet';
-import Hero from "../component/hero";
-import Paygate from "../component/paygate";
-import Footer from "../component/footer";
+import NavBar from "../components/navBar"
+import Footer from "../components/footer"
+import { Outlet } from "react-router-dom"
 
 const Layout = () => {
     return (
-        <>
-            <NavBar />
-            {/* <Outlet/> */}
-            <Hero />
-            <Paygate />
-            <Footer />
-        </>
-    );
+        <div>
+            <NavBar/>
+            <Outlet/>
+            <Footer/>
+        </div>
+    )
 }
-
-export default Layout;
+export default Layout
