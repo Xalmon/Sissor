@@ -1,51 +1,49 @@
 import React from 'react';
-import LineImage from '../../assests/images/Line 70.png';
-import styles from '../hero/index.module.css';
+import FilledButton from '../../../buttons/filledButton';
+import GhostButton from '../../../buttons/ghostButton';
+import Logo from '../../../assets/images/Vector 3.png';
+import styles from "../hero/index.module.css"
+import Vector from '../../../assets/images/Vector 2.png'
+import Frame from '../../../assets/images/Frame 1000001716.png'
+import Ellipses from '../../../assets/images/Ellipse 1.png'
+import Rectangle from '../../../assets/images/Rectangle 9.png'
 
-const StatItem = ({ boldText, smallerText }) => (
-  <div className={styles.statItem}>
-    <p className={styles.boldTexts}>{boldText}</p>
-    <p className={styles.smallerTexts}>{smallerText}</p>
-  </div>
-);
+const BodyContent = () => {
+    return(
+        <div className={styles.hero}>
+            
+            <p className={styles.optimize}>Optimize Your Online Experience with Our <br />
+            Advanced <span>URL Shortening</span> Solution</p>
+            <img src={Logo} alt="line pic" className={styles.lineImage} />
 
-const Hero = () => {
-  return (
-    <div className={styles.heroSectionDiv}>
-      <div className={styles.firstDiv}>
-        <div className={styles.oneStopWrapper}>
-          <p className={styles.oneStop}>
-            One Stop.
-             Four <span>Possibilities</span>.
-          </p>
-        </div>
+            <p className={styles.personalize}>
+            Personalize your shortened URLs to align with your brand identity. Utilize custom slugs, <br /> branded links, and domain customization options to reinforce your brand presence and <br /> enhance user engagement.
+            </p>
 
-        <div className={styles.statsContainerOne}>
-          <StatItem boldText="3M" smallerText="Active users" />
-          <StatItem boldText="60M" smallerText="Links & QR codes created" />
-          <StatItem boldText="1B" smallerText="Clicked & Scanned connections" />
-          <StatItem boldText="300K" smallerText="App Integrations" />
+            <div className={styles.heroBtn}>
+                <FilledButton text={'Sign up'} />
+                <GhostButton text={'Learn more'} />
+            </div>
+
+            <div className={styles.vectorSection}>
+                <img src={Vector} alt="vector" className={styles.vectorImage} />
+
+                <div className={styles.vectorSection}>
+                    <div className={styles.innerVectorSect}>
+                        <img src={Frame} alt="group frame" />
+                        <p>
+                        Seamlessly transform your long URLs into concise <br />and shareable links with just few clicks.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div className={styles.heroCenter}>
+                <img src={Rectangle} alt="rectangle" className={styles.rectangle} />
+                <img src={Ellipses} alt="elipses" className={styles.ellipses} />
+            </div>
         </div>
-      </div>
-      <div className={styles.secondDiv}>
-        <p className={styles.oneStop}>
-          Why choose <br /> <span>Scissors</span>.
-        </p>
-        <p className={styles.statement}>
-          Scissors is the hub of everything that has to do with your link management. We shorten your URLs, allow creating custom ones for your personal, business, event usage. Our swift QR code creation, management and usage tracking with advance analytics for all of these is second to none. 
-        </p>
-        <div className={styles.statsContainerTwo}>
-          <img src={LineImage} alt="line" className={styles.lineImage} />
-          <StatItem boldText="URL Shortening" smallerText="Scissor allows you to shorten URLs of your business, events. Shorten your URL at scale, URL redirects." />
-          <img src={LineImage} alt="line" className={styles.lineImage} />
-          <StatItem boldText="Custom URLs" smallerText="With Scissor, you can create custom URLs, with the length you want! A solution for socials and businesses." />
-          <img src={LineImage} alt="line" className={styles.lineImage} />
-          <StatItem boldText="QR Codes" smallerText="Generate QR codes to your business, events. Bring your audience and customers to your doorstep with this scan and go solution." />
-          <img src={LineImage} alt="line" className={styles.lineImage} />
-          <StatItem boldText="Data Analytics" smallerText="Receive data on the usage of either your shortened URL, custom URLs or generated QR codes. Embedded to monitor progress." />
-        </div>
-      </div>
-    </div>
-  );
-};
-export default Hero;
+    )
+}
+
+export default BodyContent

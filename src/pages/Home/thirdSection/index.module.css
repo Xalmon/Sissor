@@ -1,0 +1,22 @@
+.thirdSectionDiv {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-top: 20px;
+    padding: 50px 260px;
+}
+
+.oneStop, .boldTexts {
+    font-family: 'HelveticaforTarget-Bold', sans-serif;
+    font-size: 30px;
+
+    > span {
+        color: rgb(0, 90, 226);;
+    }
+}
+
+.smallerTexts {
+    margin: 0px;
+    margin-top: -15px;
+    font-family: 'HelveticaforTarget', sans-serif;
+}

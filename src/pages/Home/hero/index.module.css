@@ -1,66 +1,91 @@
-.heroSectionDiv {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
-  margin-top: 20px;
-  padding: 50px 260px;
+@import url('https://fonts.cdnfonts.com/css/helveticafortarget-bold');
+
+.hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 60px;
 }
 
-.oneStop, .boldTexts {
-font-family: 'HelveticaforTarget-Bold', sans-serif;
-font-size: 30px;
+.optimize {
+    font-family: 'HelveticaforTarget-Bold', sans-serif;
+    font-size: 48px;
+    font-weight: bold;
+    text-align: center;
+    line-height: 100px;
+
+    >span {
+        color: rgb(0, 90, 226);;
+    }
 }
 
-.oneStop span {
-color: rgb(0, 90, 226);
+.lineImage {
+    margin: 0px;
+    margin-top: -70px;
 }
 
-.smallerTexts {
-margin: 0;
-margin-top: -15px;
-font-family: 'HelveticaforTarget', sans-serif;
+.personalize {
+    font-family: 'HelveticaforTarget', sans-serif;
+    text-align: center;
+    font-size: 18.5px;
+    line-height: 28px;
+    color: black;
+    margin-top: 30px;
+    font-weight: bold;
 }
 
-.statsContainerOne {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: -20px;
-  font-size: -20px;
-  }
-
-.statsContainerTwo {
-display: flex;
-flex-wrap: wrap;
-justify-content: center;
-gap: 20px;
-font-size: 18px;
+.heroBtn {
+    display: flex;
+    flex-direction: row;
+    margin-top: 40px;
 }
 
-.statItem {
-text-align: center;
+.vectorSection {
+    display: flex;
+    flex-direction: row;
+    margin-top: 60px;
 }
 
-.firstDiv {
-display: flex;
-flex-direction: row;
-align-items: center;
-gap: 15px;
+.vectorImage {
+    margin-right: -50px;
+}
+ 
+.innerVectorSect {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 50px 60px;
+    border: solid;
+    border-width: 1px;
+    border-color: rgb(0, 90, 226);;
+    border-radius: 30px;
+    margin-left: -75px;
+    margin-top: -45px;
+    background-color: white;
+    height: 120px;
+
+    > p {
+        text-align: center;
+        font-family: 'HelveticaforTarget', sans-serif;
+        font-size: 18.5px;
+        color: black;
+        font-weight: bold;
+    }
 }
 
-.firstDiv p {
-  font-family: 'HelveticaforTarget-Bold', sans-serif;
-  font-size: 35px;
+.heroCenter {
+    display: flex;
+    margin-top: 80px;
+    gap: -100%;
+    justify-content: center;
 }
 
-.firstDiv p span {
-  color: rgb(0, 90, 226);
+.rectangle {
+    position: absolute;
 }
-.statement {
-font-family: 'HelveticaforTarget', sans-serif;
-font-size: 15px;
-margin-top: -20px;
-text-align: center;
-color: black;
-margin-left: 12px;
+
+.ellipses {
+    z-index: 5;
+    margin-top: 18px;
 }

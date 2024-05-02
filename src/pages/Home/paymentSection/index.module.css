@@ -1,0 +1,171 @@
+@import url('https://fonts.cdnfonts.com/css/helveticafortarget-bold');
+
+.mainContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.firstDiv {
+
+}
+
+.firstInnerDiv {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 15px;
+
+    > p {
+        font-family: 'HelveticaforTarget-Bold', sans-serif;
+        font-size: 35px;
+
+        > span {
+            color: rgb(0,90,226);
+        }
+    }
+}
+
+.statement {
+    font-family: 'HelveticaforTarget', sans-serif;
+    font-size: 15px;
+    margin-top: -20px;
+    text-align: center;
+    color: black;
+    margin-left: 12px;
+}
+
+.priceCards {
+    display: flex;
+    flex-direction: row;
+    margin-top: 40px;
+    align-items: center;
+}
+
+.prices {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border: 1px solid;
+    padding: 13px 40px;
+    border-radius: 10px;
+    width: 210px;
+    height: 450px;
+    border-color: rgb(135, 165, 209);
+}
+
+.prices:hover {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(30, 52, 72);
+    color: white;
+    width: 250px;
+    height: 570px;
+    justify-content: center;
+}
+
+.categories {
+    font-family: 'HelveticaforTarget', sans-serif;
+    font-size: 18px;
+    /* font-weight: bold; */
+    margin-bottom: -3px;
+}
+
+.amount {
+    font-family: 'HelveticaforTarget-Bold', sans-serif;
+    font-size: 30px;
+}
+
+.perks {
+    font-family: 'HelveticaforTarget', sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: -20px;
+}
+
+.features {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 5px;
+
+    > p {
+        font-family: 'HelveticaforTarget', sans-serif;
+        font-size: 14px;
+    }
+}
+
+.checkMark {
+    color: rgb(0,90,226);
+}
+
+.btns {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    margin-top: 60px;
+}
+
+/* .formParentDiv {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+} */
+
+.formDiv {
+    background-image: url('../../../assets/images/form\ section.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-top: 80px;
+    padding: 100px 550px;
+}
+
+.mainForm {
+    background-color: white;
+    border-radius: 10px;
+    padding: 40PX 50PX;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.firstInputField {
+    width: 350px;
+    height: 45px;
+    border-radius: 10px;
+    border: 1px solid;
+    border-color: rgb(0,90,226);
+    margin-top: 10px;
+}
+
+.selectDiv {
+    display: flex;
+    gap: 10px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    
+}
+
+.selectBox {
+    height: 50px;
+    width: 170px;
+    border-radius: 10px;
+    border: 1px solid;
+    border-color: rgb(0,90,226);
+}
+
+.secondInputField {
+    height: 45px;
+    width: 169px;
+    border-radius: 10px;
+    border: 1px solid;
+    border-color: rgb(0,90,226);
+}
+
+.formText {
+    font-family: 'HelveticaforTarget', sans-serif;
+    font-size: 14px;
+    margin-left: -30px;
+    color: rgb(0,90,226);
+    margin-top: 20px;
+}

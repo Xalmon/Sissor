@@ -1,0 +1,63 @@
+.footer {
+    display: flex;
+    flex-direction: column;
+    padding: 100px 250px;
+    justify-content: center;
+    align-items: center;
+}
+
+.footerMain {
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+}
+
+.leftFooter {
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+}
+
+.logos {
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+    padding: 0 8px;
+}
+
+.footerRight {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 50px;
+    padding: 0 15px;
+}
+
+.footerRightChildren {
+    font-size: 16px;
+    line-height: 26px;
+}
+
+.footerRightChildren h3 {
+    margin: 0;
+    margin-bottom: 10px;
+}
+
+.footerRightChildren p {
+    margin: 0;
+}
+
+.lastLast {
+    display: flex;
+    width: 100%;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+.lastLast p {
+    display: flex;
+}
+
+.logoStyle {
+    width: 24px;
+    font-size: 24px;
+}

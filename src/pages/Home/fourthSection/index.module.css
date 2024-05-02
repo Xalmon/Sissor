@@ -1,0 +1,54 @@
+.fourthSection {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding: 90px 260px;
+}
+
+.whyChoose {
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    align-items: center;
+
+    .lineGradient {
+        height: 37px;
+    }
+
+    > p {
+        font-family: 'HelveticaforTarget-Bold', sans-serif;
+        font-size: 32px;
+
+        > span {
+            color: rgb(0, 90, 226);;
+        }
+    }
+}
+
+.fourthSecTexts {
+    font-family: 'HelveticaforTarget', sans-serif;
+    font-size: 14px;
+    color: black;
+    line-height: 25px;
+    margin: 0px;
+    margin-top: -20px;
+    margin-left: 25px;
+}
+
+.secondDiv {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+}
+
+.innerTextHeadings {
+    font-family: 'HelveticaforTarget', sans-serif;
+    font-size: 30px;
+    color: black;
+    font-weight: bold;
+}
+
+.innerTexts {
+    font-family: 'HelveticaforTarget', sans-serif;
+    font-size: 15px;
+}
