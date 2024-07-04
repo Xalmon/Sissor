@@ -3,7 +3,7 @@ name: CI/CD Pipeline
 on:
   push:
     branches:
-      - main  # or your main branch name
+      - main  
 
 jobs:
   build-and-deploy:
@@ -16,7 +16,7 @@ jobs:
       - name: Set up Node.js
         uses: actions/setup-node@v3
         with:
-          node-version: '14'  # or your preferred Node.js version
+          node-version: '14'  
 
       - name: Install dependencies
         run: npm install
@@ -35,8 +35,6 @@ jobs:
 
       - name: Push Docker image to Docker Hub
         run: docker push ${{ secrets.DOCKERHUB_USERNAME }}/my-app:latest
-
-      # Uncomment and adjust deployment steps according to your needs
 
       # - name: Deploy to Development
       #   run: |
